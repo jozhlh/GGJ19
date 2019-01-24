@@ -1,12 +1,17 @@
 # Ignore everything.  We'll whitelist what we want to pull in.
 /*
-/*/
 
-# Un-ignore Directories.
+# Un-ignore Root Directories.
 !.gitignore
+!/Game
+!/WhitelistedFiles
+
+# Ignore everything in the project folder
+/Game/*
+
+# Un-ignore Project Directories.
 !/Game/Assets/
 !/Game/ProjectSettings/
-!/WhitelistedFiles/
 
 # Un-ignore specific files.
 !/Game/Packages/manifest.json
