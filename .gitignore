@@ -3,6 +3,7 @@
 
 # Un-ignore Root Directories.
 !.gitignore
+!.gitattributes
 !/Game
 !/WhitelistedFiles
 
