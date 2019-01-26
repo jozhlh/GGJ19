@@ -27,7 +27,7 @@ public class EyeControl : VRTK_InteractableObject
 	/// </summary>
 	void Start()
 	{
-		GetComponent<MeshRenderer>().material = defaultMat;
+		//GetComponent<MeshRenderer>().material = defaultMat;
 		vision = GetComponentInParent<SnailVision>();
 	}
 
@@ -47,7 +47,7 @@ public class EyeControl : VRTK_InteractableObject
 
 	public void EnableScreen()
 	{
-		GetComponent<MeshRenderer>().material = touchedMat;
+		//GetComponent<MeshRenderer>().material = touchedMat;
 
 		screen.EnableScreen(true);
 
@@ -56,7 +56,7 @@ public class EyeControl : VRTK_InteractableObject
 
 	public void DisableScreen()
 	{
-		GetComponent<MeshRenderer>().material = defaultMat;
+		//GetComponent<MeshRenderer>().material = defaultMat;
 
 		screen.EnableScreen(false);
 
