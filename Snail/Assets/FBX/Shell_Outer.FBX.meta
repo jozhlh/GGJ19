@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1e8c81d39850bb24a92cd2cda3fa82ad
+guid: a8fd1830be0b65648a4ffcb91603d108
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -8,12 +8,18 @@ ModelImporter:
     2100000: No Name
     2300000: //RootNode
     3300000: //RootNode
-    4300000: ShellBlockout
-  externalObjects: {}
+    4300000: Lever_Base
+    4300002: ShellBlockout
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 756b79272590c2d44855bd8147e5176e, type: 2}
   materials:
     importMaterials: 1
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4

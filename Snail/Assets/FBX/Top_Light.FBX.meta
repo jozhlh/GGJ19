@@ -3,39 +3,55 @@ guid: 0c8c0821814d7704facd9910a7b77300
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: B
-    100002: Emmissive
-    100004: Glass
-    100006: //RootNode
+    100000: //RootNode
+    100002: B
+    100004: Emmissive
+    100006: Glass
     100008: Wire
-    400000: B
-    400002: Emmissive
-    400004: Glass
-    400006: //RootNode
+    400000: //RootNode
+    400002: B
+    400004: Emmissive
+    400006: Glass
     400008: Wire
     2100000: No Name
     2100002: Emissive
     2100004: Glass
-    2300000: B
-    2300002: Emmissive
-    2300004: Glass
-    2300006: //RootNode
+    2300000: //RootNode
+    2300002: B
+    2300004: Emmissive
+    2300006: Glass
     2300008: Wire
-    3300000: B
-    3300002: Emmissive
-    3300004: Glass
-    3300006: //RootNode
+    3300000: //RootNode
+    3300002: B
+    3300004: Emmissive
+    3300006: Glass
     3300008: Wire
-    4300000: Holder
-    4300002: Wire
-    4300004: B
-    4300006: Emmissive
-    4300008: Glass
-  externalObjects: {}
+    4300000: Lever_Base
+    4300002: Holder
+    4300004: Wire
+    4300006: B
+    4300008: Emmissive
+    4300010: Glass
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Emissive
+    second: {fileID: 2100000, guid: b18ccd9d3ee46874c9506f4e4ed1d9aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: d8d29f81aada2b34c88820863e93376e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 756b79272590c2d44855bd8147e5176e, type: 2}
   materials:
     importMaterials: 1
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
