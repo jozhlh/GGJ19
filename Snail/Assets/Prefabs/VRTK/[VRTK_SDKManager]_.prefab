@@ -884,7 +884,7 @@ GameObject:
   - component: {fileID: 114280238518750834}
   - component: {fileID: 114480475191229280}
   m_Layer: 0
-  m_Name: '[VRTK_SDKManager]'
+  m_Name: '[VRTK_SDKManager]_'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
