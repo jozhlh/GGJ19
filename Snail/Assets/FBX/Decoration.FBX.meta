@@ -1,29 +1,34 @@
 fileFormatVersion: 2
-guid: 9cd2a54801f691e429b656a7d96a24ab
+guid: d899a52c4ab346b44af4b42ab2eae690
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Clips
-    100004: Cylinder001
-    100006: Wires
+    100002: Box010
+    100004: Box012
+    100006: Cylinder001
+    100008: Plane009
     400000: //RootNode
-    400002: Clips
-    400004: Cylinder001
-    400006: Wires
+    400002: Box010
+    400004: Box012
+    400006: Cylinder001
+    400008: Plane009
     2100000: No Name
     2300000: //RootNode
-    2300002: Clips
-    2300004: Cylinder001
-    2300006: Wires
+    2300002: Box010
+    2300004: Box012
+    2300006: Cylinder001
+    2300008: Plane009
     3300000: //RootNode
-    3300002: Clips
-    3300004: Cylinder001
-    3300006: Wires
+    3300002: Box010
+    3300004: Box012
+    3300006: Cylinder001
+    3300008: Plane009
     4300000: Lever_Base
-    4300002: Wires
-    4300004: Cylinder001
-    4300006: Clips
+    4300002: Cylinder001
+    4300004: Plane009
+    4300006: Box010
+    4300008: Box012
   externalObjects:
   - first:
       type: UnityEngine:Material

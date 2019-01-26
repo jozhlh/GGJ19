@@ -3,24 +3,32 @@ guid: 49bcde32c4925e24ca8d791c7334db2b
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Box009
-    100002: Rectangle002
-    100004: //RootNode
-    400000: Box009
-    400002: Rectangle002
-    400004: //RootNode
+    100000: //RootNode
+    100002: Box009
+    100004: Rectangle002
+    400000: //RootNode
+    400002: Box009
+    400004: Rectangle002
     2100000: No Name
-    2300000: Box009
-    2300002: Rectangle002
-    3300000: Box009
-    3300002: Rectangle002
-    4300000: Box009
-    4300002: Rectangle002
-  externalObjects: {}
+    2300000: //RootNode
+    2300002: Box009
+    2300004: Rectangle002
+    3300000: //RootNode
+    3300002: Box009
+    3300004: Rectangle002
+    4300000: Lever_Base
+    4300002: Box009
+    4300004: Rectangle002
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 756b79272590c2d44855bd8147e5176e, type: 2}
   materials:
     importMaterials: 1
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4

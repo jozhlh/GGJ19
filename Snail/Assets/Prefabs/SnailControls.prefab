@@ -416,7 +416,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1067528494129718}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -957,8 +957,8 @@ MonoBehaviour:
   equalityFidelity: 0.001
   hingePoint: {fileID: 0}
   angleLimits:
-    minimum: -180
-    maximum: 180
+    minimum: -45
+    maximum: 45
   minMaxThresholdAngle: 1
   restingAngle: 0
   forceRestingAngleThreshold: 1
@@ -975,7 +975,7 @@ MonoBehaviour:
   detachDistance: 1
   rotationAction: 0
   grabbedFriction: 1
-  releasedFriction: 1
+  releasedFriction: 6
   onlyInteractWith: []
 --- !u!114 &114045185589558664
 MonoBehaviour:
