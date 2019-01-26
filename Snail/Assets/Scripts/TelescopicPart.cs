@@ -23,7 +23,6 @@ public class TelescopicPart : MonoBehaviour
 	{
 		//t = 1 - t;
 		var newPos = Vector3.Lerp(initialPos, finalPos, t);
-		Debug.Log(newPos.x + ", " + newPos.y + ", " + newPos.z);
 		transform.localPosition = newPos;
 	}
 }

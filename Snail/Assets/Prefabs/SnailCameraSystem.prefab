@@ -1678,6 +1678,7 @@ MonoBehaviour:
   defaultMat: {fileID: 2100000, guid: 0c4dacc30e3030844a52119b7617f0ea, type: 2}
   touchedMat: {fileID: 2100000, guid: c0a14e1eb03686a40ac4c8a8191eb316, type: 2}
   vision: {fileID: 0}
+  works: 0
 --- !u!114 &114076121535194972
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1699,8 +1700,8 @@ MonoBehaviour:
   restingPosition: 0.5
   forceRestingPositionThreshold: 0
   stepValueRange:
-    minimum: -5
-    maximum: 5
+    minimum: -1
+    maximum: 1
   stepSize: 1
   useStepAsValue: 1
   snapToStep: 1
@@ -1878,6 +1879,7 @@ MonoBehaviour:
   defaultMat: {fileID: 2100000, guid: 0c4dacc30e3030844a52119b7617f0ea, type: 2}
   touchedMat: {fileID: 2100000, guid: 91ef7a1d760ee76428a3d4dd3656414a, type: 2}
   vision: {fileID: 0}
+  works: 0
 --- !u!114 &114729441334515976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1944,8 +1946,8 @@ MonoBehaviour:
   restingPosition: 0.5
   forceRestingPositionThreshold: 0
   stepValueRange:
-    minimum: -5
-    maximum: 5
+    minimum: -1
+    maximum: 1
   stepSize: 1
   useStepAsValue: 1
   snapToStep: 1

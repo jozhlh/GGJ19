@@ -12,12 +12,17 @@ public class EyeSlider : MonoBehaviour
 	[SerializeField]
 	private TelescopicPart[] parts;
 
+	private EyeControl controller;
+
+
 	// Use this for initialization
 	void Start ()
 	{
+		controller = GetComponentInChildren<EyeControl>();
 		//parts = GetComponentsInParent<TelescopicPart>();
 		slider.ValueChanged += OnValueChanged;
 		var t= slider.GetNormalizedValue();
+		controller.works = (t > 0.9f);
 		for (int i = 0; i < parts.Length; i++)
 		{
 			parts[i].LerpToPos(t);
@@ -40,7 +45,7 @@ public class EyeSlider : MonoBehaviour
 
 		var t = e.normalizedValue;
 
-		Debug.Log(t);
+		controller.works = (t > 0.9f);
 
 		for (int i = 0; i < parts.Length; i++)
 		{

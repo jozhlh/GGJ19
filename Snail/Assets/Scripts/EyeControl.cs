@@ -21,6 +21,8 @@ public class EyeControl : VRTK_InteractableObject
 	[SerializeField]
 	private SnailVision vision;
 
+	public bool works = false;
+
 	/// <summary>
 	/// Start is called on the frame when a script is enabled just before
 	/// any of the Update methods is called the first time.
@@ -48,6 +50,11 @@ public class EyeControl : VRTK_InteractableObject
 	public void EnableScreen()
 	{
 		//GetComponent<MeshRenderer>().material = touchedMat;
+
+		if (!works)
+		{
+			return;
+		}
 
 		screen.EnableScreen(true);
 
