@@ -18,6 +18,9 @@ public class EyeControl : VRTK_InteractableObject
 	[SerializeField] 
 	private Material touchedMat = null;
 
+	[SerializeField]
+	private SnailVision vision;
+
 	/// <summary>
 	/// Start is called on the frame when a script is enabled just before
 	/// any of the Update methods is called the first time.
@@ -25,12 +28,25 @@ public class EyeControl : VRTK_InteractableObject
 	void Start()
 	{
 		GetComponent<MeshRenderer>().material = defaultMat;
+		vision = GetComponentInParent<SnailVision>();
 	}
 
 	public override void OnInteractableObjectTouched(InteractableObjectEventArgs e)
 	{
 		base.OnInteractableObjectTouched(e);
 
+		vision.Touched();
+	}
+
+	public override void OnInteractableObjectUntouched(InteractableObjectEventArgs e)
+	{
+		base.OnInteractableObjectUntouched(e);
+
+		vision.Untouched();
+	}
+
+	public void EnableScreen()
+	{
 		GetComponent<MeshRenderer>().material = touchedMat;
 
 		screen.EnableScreen(true);
@@ -38,10 +54,8 @@ public class EyeControl : VRTK_InteractableObject
 		cameraRotation.UseCamera(true);
 	}
 
-	public override void OnInteractableObjectUntouched(InteractableObjectEventArgs e)
+	public void DisableScreen()
 	{
-		base.OnInteractableObjectUntouched(e);
-
 		GetComponent<MeshRenderer>().material = defaultMat;
 
 		screen.EnableScreen(false);
