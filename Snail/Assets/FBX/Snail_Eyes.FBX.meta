@@ -30,6 +30,7 @@ ModelImporter:
     400022: Eye_Join
     400024: Eye_Join001
     2100000: No Name
+    2100002: Eyes
     2300000: //RootNode
     2300002: DOF_Eye_Left
     2300004: DOF_Eye_Right
@@ -71,6 +72,11 @@ ModelImporter:
     4300024: Eye_Join001
     4300026: DOF_Eye_Left
   externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eyes
+    second: {fileID: 2100000, guid: fdcfecfc2ba2314468231d0ba1d2565a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
