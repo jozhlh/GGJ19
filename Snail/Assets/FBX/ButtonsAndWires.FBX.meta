@@ -1,26 +1,44 @@
 fileFormatVersion: 2
-guid: 0a4a9802162e059478d3f5afce780122
+guid: b4a2fb3fb7e773849b0199ee5c9101a7
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: Box011
+    100002: Box012
+    100004: Box056
+    100006: Box057
+    100008: Box058
+    100010: //RootNode
+    400000: Box011
+    400002: Box012
+    400004: Box056
+    400006: Box057
+    400008: Box058
+    400010: //RootNode
     2100000: No Name
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Lever_Base
-    4300002: Box009
-    4300004: Keyboard
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: No Name
-    second: {fileID: 2100000, guid: 756b79272590c2d44855bd8147e5176e, type: 2}
+    2300000: Box011
+    2300002: Box012
+    2300004: Box056
+    2300006: Box057
+    2300008: Box058
+    2300010: //RootNode
+    3300000: Box011
+    3300002: Box012
+    3300004: Box056
+    3300006: Box057
+    3300008: Box058
+    3300010: //RootNode
+    4300000: Buttons and Wires
+    4300002: Box012
+    4300004: Box056
+    4300006: Box057
+    4300008: Box058
+    4300010: Box011
+  externalObjects: {}
   materials:
     importMaterials: 1
-    materialName: 1
-    materialSearch: 2
+    materialName: 0
+    materialSearch: 1
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
