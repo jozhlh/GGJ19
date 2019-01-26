@@ -21,20 +21,9 @@ public class EyeScreen : MonoBehaviour
 	{
 		m_rend = GetComponent<MeshRenderer>();
 	}
-	
-	// Update is called once per frame
-	void Update ()
-	{
-		CheckScreensEnabled();
-	}
 
-	void CheckScreensEnabled()
+	public void EnableScreen(bool enabled)
 	{
-		m_rend.material = GetHandTriggerHeld() ? m_cameraMaterial : m_inactiveMaterial;
-	}
-
-	bool GetHandTriggerHeld()
-	{
-		return OVRInput.Get(OVRInput.Button.PrimaryHandTrigger, m_controller);
+		m_rend.material = enabled ? m_cameraMaterial : m_inactiveMaterial;
 	}
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GrabbableLever : OVRGrabbable {
+public class GrabbableEyeControl : OVRGrabbable {
 
 	// Use this for initialization
 	void Start () {
