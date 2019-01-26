@@ -1,23 +1,14 @@
 fileFormatVersion: 2
-guid: 025d503aa55a9ad42a24cb5fc159ed06
+guid: b53bb3df883470a46afe985a1c94a206
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: DOF_Lever_Guard
-    100002: //RootNode
-    100004: DOF_Lever
-    400000: DOF_Lever_Guard
-    400002: //RootNode
-    400004: DOF_Lever
-    2100000: Placeholder
-    2300000: DOF_Lever_Guard
-    2300002: //RootNode
-    2300004: DOF_Lever
-    3300000: DOF_Lever_Guard
-    3300002: //RootNode
-    3300004: DOF_Lever
-    4300000: DOF_Lever
-    4300002: DOF_Lever_Guard
+    100000: //RootNode
+    400000: //RootNode
+    2100000: No Name
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Arena
   externalObjects: {}
   materials:
     importMaterials: 1

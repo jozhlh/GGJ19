@@ -20,6 +20,8 @@ public class EyeScreen : MonoBehaviour
 	void Start ()
 	{
 		m_rend = GetComponent<MeshRenderer>();
+
+		m_rend.material = m_inactiveMaterial;
 	}
 
 	public void EnableScreen(bool enabled)

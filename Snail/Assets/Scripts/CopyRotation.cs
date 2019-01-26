@@ -20,6 +20,9 @@ public class CopyRotation : MonoBehaviour
 	void Start()
 	{
 		m_camera = GetComponent<Camera>();
+
+		m_active = false;
+		m_camera.enabled = false;
 	}
 
 	// Update is called once per frame
