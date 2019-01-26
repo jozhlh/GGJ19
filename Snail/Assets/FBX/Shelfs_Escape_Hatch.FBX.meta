@@ -10,6 +10,7 @@ ModelImporter:
     400002: Box009
     400004: Rectangle002
     2100000: No Name
+    2100002: Back_Hatch
     2300000: //RootNode
     2300002: Box009
     2300004: Rectangle002
@@ -20,6 +21,11 @@ ModelImporter:
     4300002: Box009
     4300004: Rectangle002
   externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Back_Hatch
+    second: {fileID: 2100000, guid: ab812c30be574f246a1f44f6153fc77c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

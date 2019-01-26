@@ -11,6 +11,7 @@ ModelImporter:
     400004: DOF_Lever_Guard
     2100000: No Name
     2100002: Placeholder
+    2100004: Player_Area
     2300000: //RootNode
     2300002: DOF_Lever
     2300004: DOF_Lever_Guard
@@ -31,6 +32,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Placeholder
     second: {fileID: 2100000, guid: 756b79272590c2d44855bd8147e5176e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Player_Area
+    second: {fileID: 2100000, guid: b7c6a1b27554f0840bd7eed9e62b2c18, type: 2}
   materials:
     importMaterials: 1
     materialName: 1

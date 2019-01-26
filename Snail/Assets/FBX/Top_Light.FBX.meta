@@ -16,6 +16,7 @@ ModelImporter:
     2100000: No Name
     2100002: Emissive
     2100004: Glass
+    2100006: Back_Hatch
     2300000: //RootNode
     2300002: B
     2300004: Emmissive
@@ -33,6 +34,11 @@ ModelImporter:
     4300008: Emmissive
     4300010: Glass
   externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Back_Hatch
+    second: {fileID: 2100000, guid: ab812c30be574f246a1f44f6153fc77c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

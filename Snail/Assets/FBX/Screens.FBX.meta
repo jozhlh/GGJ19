@@ -23,6 +23,7 @@ ModelImporter:
     2100006: 'Main_Mat Slot #4'
     2100008: 'Main_Mat Slot #6'
     2100010: CAMERA_RIGHT
+    2100012: Screens
     2300000: //RootNode
     2300002: Line001
     2300004: Line002
@@ -56,6 +57,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Placeholder
     second: {fileID: 2100000, guid: 756b79272590c2d44855bd8147e5176e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Screens
+    second: {fileID: 2100000, guid: 14d4de87ce5ed894abb0189df805a430, type: 2}
   materials:
     importMaterials: 1
     materialName: 1

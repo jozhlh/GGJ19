@@ -6,6 +6,7 @@ ModelImporter:
     100000: //RootNode
     400000: //RootNode
     2100000: No Name
+    2100002: Player_Area
     2300000: //RootNode
     3300000: //RootNode
     4300000: Lever_Base
@@ -15,6 +16,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: No Name
     second: {fileID: 2100000, guid: 756b79272590c2d44855bd8147e5176e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Player_Area
+    second: {fileID: 2100000, guid: b7c6a1b27554f0840bd7eed9e62b2c18, type: 2}
   materials:
     importMaterials: 1
     materialName: 1
