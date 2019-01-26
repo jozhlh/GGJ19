@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0851ef569ac6b3340abd6b3dca2633de
+guid: f2b6cb9c3ce6bcb49a649b60d642e16d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -10,7 +10,12 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Screen_L
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CAMERA_LEFT
+    second: {fileID: 2100000, guid: c0a14e1eb03686a40ac4c8a8191eb316, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
