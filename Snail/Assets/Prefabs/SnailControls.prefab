@@ -667,7 +667,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 13de5d097050a6b40a7e071264ca41aa, type: 3}
+  - {fileID: 2100000, guid: 756b79272590c2d44855bd8147e5176e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -772,7 +772,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 025d503aa55a9ad42a24cb5fc159ed06, type: 3}
+  - {fileID: 2100000, guid: 756b79272590c2d44855bd8147e5176e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -807,7 +807,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 51afd2a9f5466c24cacb44e70e3c3a84, type: 3}
+  - {fileID: 2100000, guid: 756b79272590c2d44855bd8147e5176e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -842,7 +842,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 025d503aa55a9ad42a24cb5fc159ed06, type: 3}
+  - {fileID: 2100000, guid: 756b79272590c2d44855bd8147e5176e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -875,14 +875,14 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1482495331487944}
-  m_Mesh: {fileID: 4300000, guid: 51afd2a9f5466c24cacb44e70e3c3a84, type: 3}
+  m_Mesh: {fileID: 4300002, guid: 51afd2a9f5466c24cacb44e70e3c3a84, type: 3}
 --- !u!33 &33158474187414106
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1555997116889858}
-  m_Mesh: {fileID: 4300000, guid: 13de5d097050a6b40a7e071264ca41aa, type: 3}
+  m_Mesh: {fileID: 4300002, guid: 13de5d097050a6b40a7e071264ca41aa, type: 3}
 --- !u!33 &33349179680706828
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -896,14 +896,14 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1485222751355450}
-  m_Mesh: {fileID: 4300002, guid: 025d503aa55a9ad42a24cb5fc159ed06, type: 3}
+  m_Mesh: {fileID: 4300004, guid: 025d503aa55a9ad42a24cb5fc159ed06, type: 3}
 --- !u!33 &33711140961726718
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1810611699845354}
-  m_Mesh: {fileID: 4300000, guid: 025d503aa55a9ad42a24cb5fc159ed06, type: 3}
+  m_Mesh: {fileID: 4300002, guid: 025d503aa55a9ad42a24cb5fc159ed06, type: 3}
 --- !u!65 &65221722811162168
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -957,8 +957,8 @@ MonoBehaviour:
   equalityFidelity: 0.001
   hingePoint: {fileID: 0}
   angleLimits:
-    minimum: -45
-    maximum: 45
+    minimum: 0
+    maximum: 90
   minMaxThresholdAngle: 1
   restingAngle: 0
   forceRestingAngleThreshold: 1
@@ -967,10 +967,10 @@ MonoBehaviour:
   stepValueRange:
     minimum: 0
     maximum: 1
-  stepSize: 0.1
+  stepSize: 0.2
   useStepAsValue: 1
-  snapToStep: 0
-  snapForce: 10
+  snapToStep: 1
+  snapForce: 5
   precisionGrab: 1
   detachDistance: 1
   rotationAction: 0

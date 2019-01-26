@@ -20,7 +20,7 @@ public class SnailMovement : MonoBehaviour
 	private float m_rotationalSpeed = 0.0f;
 
 	[SerializeField]
-	private Rigidbody m_snailRB;
+	private Transform m_environmentTransform;
 
 	private float m_forwardAcceleration = 0.0f;
 
@@ -52,6 +52,7 @@ public class SnailMovement : MonoBehaviour
 	{
 		if (m_isRotating)
 		{
+			RotateEnvironment();
 			m_isRotating = false;
 		}
 		m_rotationDelta = 0.0f;
@@ -61,13 +62,30 @@ public class SnailMovement : MonoBehaviour
 
 	void MoveForwards()
 	{
-		Debug.Log("acc " + m_forwardAcceleration + " speeed " + m_forwardSpeed);
-		//m_forwardAcceleration = 1.0f;
-		var forward = transform.right;
-		forward *= (m_forwardAcceleration * m_forwardSpeed);
+		if ((m_forwardAcceleration < 0.01f) && (m_forwardAcceleration > -0.01f))
+		{
+			return;
+		}
 
-		//Debug.Log("Adding force " + forward);
-		m_snailRB.AddForce(forward, ForceMode.Force);
+		var moveDirection = transform.right;
+
+		moveDirection *= (m_forwardAcceleration * m_forwardSpeed);
+
+		var pos = m_environmentTransform.position;
+
+		pos += moveDirection;
+
+		m_environmentTransform.position = pos;
+	}
+
+	void RotateEnvironment()
+	{
+		var rotateAmount = m_rotationDelta * m_rotationalSpeed;
+
+		if ((rotateAmount > 0.0f) || (rotateAmount < 0.0f))
+		{
+			m_environmentTransform.RotateAround(Vector3.zero, Vector3.up, rotateAmount);
+		}
 	}
 
 	void SubscribeToEvents()
@@ -85,13 +103,14 @@ public class SnailMovement : MonoBehaviour
 	void LeverValueChanged(object sender, ControllableEventArgs e)
 	{
 		m_forwardAcceleration = m_leverRotator.GetNormalizedValue();
-		Debug.Log("Set to " + m_forwardAcceleration);
 	}
 
 	void HandleValueChanged(object sender, ControllableEventArgs e)
 	{
-		var currentRotation = m_handleRotator.GetNormalizedValue();
+		var currentRotation = m_handleRotator.GetValue();
 		m_rotationDelta = currentRotation - m_prevRotation;
+		m_rotationDelta *= -1.0f;
+		m_prevRotation = currentRotation;
 		m_isRotating = true;
 	}
 
