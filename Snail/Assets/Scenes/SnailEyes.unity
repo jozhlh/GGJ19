@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 21184774}
   - component: {fileID: 21184773}
   - component: {fileID: 21184772}
+  - component: {fileID: 21184776}
   m_Layer: 0
   m_Name: LeftScreen
   m_TagString: Untagged
@@ -198,6 +199,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &21184776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 21184771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cc3390b429cb9249b40dce12681c809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_controller: 1
+  m_inactiveMaterial: {fileID: 2100000, guid: 0c4dacc30e3030844a52119b7617f0ea, type: 2}
+  m_cameraMaterial: {fileID: 2100000, guid: c0a14e1eb03686a40ac4c8a8191eb316, type: 2}
 --- !u!1 &87210620
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,6 +894,7 @@ GameObject:
   - component: {fileID: 447480750}
   - component: {fileID: 447480749}
   - component: {fileID: 447480748}
+  - component: {fileID: 447480752}
   m_Layer: 0
   m_Name: RightScreen
   m_TagString: Untagged
@@ -953,6 +969,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &447480752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 447480747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cc3390b429cb9249b40dce12681c809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_controller: 2
+  m_inactiveMaterial: {fileID: 2100000, guid: 0c4dacc30e3030844a52119b7617f0ea, type: 2}
+  m_cameraMaterial: {fileID: 2100000, guid: 91ef7a1d760ee76428a3d4dd3656414a, type: 2}
 --- !u!4 &515199360 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011212216358, guid: 84c8b8609f9bb434eaf5248f17ff1293,
