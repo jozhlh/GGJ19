@@ -3,26 +3,38 @@ guid: 025d503aa55a9ad42a24cb5fc159ed06
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: DOF_Lever_Guard
-    100002: //RootNode
-    100004: DOF_Lever
-    400000: DOF_Lever_Guard
-    400002: //RootNode
-    400004: DOF_Lever
-    2100000: Placeholder
-    2300000: DOF_Lever_Guard
-    2300002: //RootNode
-    2300004: DOF_Lever
-    3300000: DOF_Lever_Guard
-    3300002: //RootNode
-    3300004: DOF_Lever
-    4300000: DOF_Lever
-    4300002: DOF_Lever_Guard
-  externalObjects: {}
+    100000: //RootNode
+    100002: DOF_Lever
+    100004: DOF_Lever_Guard
+    400000: //RootNode
+    400002: DOF_Lever
+    400004: DOF_Lever_Guard
+    2100000: No Name
+    2100002: Placeholder
+    2300000: //RootNode
+    2300002: DOF_Lever
+    2300004: DOF_Lever_Guard
+    3300000: //RootNode
+    3300002: DOF_Lever
+    3300004: DOF_Lever_Guard
+    4300000: Lever_Base
+    4300002: DOF_Lever
+    4300004: DOF_Lever_Guard
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 58c57fa05f401fc40bdf6c6cee2e5113, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Placeholder
+    second: {fileID: 2100000, guid: 756b79272590c2d44855bd8147e5176e, type: 2}
   materials:
     importMaterials: 1
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
