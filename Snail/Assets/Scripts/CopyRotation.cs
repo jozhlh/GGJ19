@@ -15,7 +15,7 @@ public class CopyRotation : MonoBehaviour
 		var controllerRotation = m_controllerTransform.localEulerAngles;
 		var cameraRotation = transform.localEulerAngles;
 		cameraRotation.y = controllerRotation.y;
-
+		cameraRotation.x = controllerRotation.x;
 		transform.localRotation = Quaternion.Euler(cameraRotation);
 	}
 }
