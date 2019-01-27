@@ -7,10 +7,26 @@ ModelImporter:
     100002: Helix001
     100004: Helix002
     100006: Plane001
+    100008: Bobble_Snail
+    100010: CATRigHub001
+    100012: CATRigTail1
+    100014: CATRigTail1 1
+    100016: CATRigTail2
+    100018: CATRigTail2 1
+    100020: CATRigTail3
+    100022: CATRigTail3 1
     400000: //RootNode
     400002: Helix001
     400004: Helix002
     400006: Plane001
+    400008: Bobble_Snail
+    400010: CATRigHub001
+    400012: CATRigTail1
+    400014: CATRigTail1 1
+    400016: CATRigTail2
+    400018: CATRigTail2 1
+    400020: CATRigTail3
+    400022: CATRigTail3 1
     2100000: Bobble_Snail
     2100002: Eyes
     2100004: No Name
@@ -18,15 +34,20 @@ ModelImporter:
     2300002: Helix001
     2300004: Helix002
     2300006: Plane001
+    2300008: Bobble_Snail
     3300000: //RootNode
     3300002: Helix001
     3300004: Helix002
     3300006: Plane001
+    3300008: Bobble_Snail
     4300000: Bobble_Snail
     4300002: Helix002
     4300004: Helix001
     4300006: Plane001
+    7400000: Take 001
     9500000: //RootNode
+    13700000: Helix001
+    13700002: Helix002
   externalObjects:
   - first:
       type: UnityEngine:Material
