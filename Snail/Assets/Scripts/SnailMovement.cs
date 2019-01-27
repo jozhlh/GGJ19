@@ -20,6 +20,9 @@ public class SnailMovement : MonoBehaviour
 	[SerializeField]
 	private GameManager gameManager;
 
+	[SerializeField]
+	private SnailAnimation snailAnimation;
+
 	[Header("Params")]
 	[SerializeField]
 	private float m_forwardSpeed = 0.0f;
@@ -112,7 +115,8 @@ public class SnailMovement : MonoBehaviour
 
 	void LeverValueChanged(object sender, ControllableEventArgs e)
 	{
-		m_forwardAcceleration = m_leverRotator.GetNormalizedValue();
+		m_forwardAcceleration = e.normalizedValue;
+		snailAnimation.UpdateAnimSpeed(m_forwardAcceleration);
 	}
 
 	void HandleValueChanged(object sender, ControllableEventArgs e)
