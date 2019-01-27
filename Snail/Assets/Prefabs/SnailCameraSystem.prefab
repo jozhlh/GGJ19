@@ -1829,6 +1829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0992cbb17e5dd34ab62fcc6a1e9ff16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snailManager: {fileID: 0}
 --- !u!114 &114522047823890490
 MonoBehaviour:
   m_ObjectHideFlags: 1

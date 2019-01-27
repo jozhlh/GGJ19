@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SnailVision : MonoBehaviour
 {
+	[SerializeField]
+	GameManager snailManager;
 	EyeControl[] eyes;
 
 	int touched = 0;
@@ -30,6 +32,7 @@ public class SnailVision : MonoBehaviour
 	{
 		if (touched > 1)
 		{
+			snailManager.Initialisation();
 			for (int i = 0; i < eyes.Length; i++)
 			{
 				eyes[i].EnableScreen();

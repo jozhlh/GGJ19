@@ -7,20 +7,26 @@ using VRTK.Controllables.ArtificialBased;
 
 public class SnailMovement : MonoBehaviour
 {
+	[Header("Refs")]
 	[SerializeField]
 	private VRTK_ArtificialRotator m_leverRotator;
 
 	[SerializeField]
 	private VRTK_ArtificialRotator m_handleRotator;
+	
+	[SerializeField]
+	private Transform m_environmentTransform;
 
+	[SerializeField]
+	private GameManager gameManager;
+
+	[Header("Params")]
 	[SerializeField]
 	private float m_forwardSpeed = 0.0f;
 
 	[SerializeField]
 	private float m_rotationalSpeed = 0.0f;
 
-	[SerializeField]
-	private Transform m_environmentTransform;
 
 	private float m_forwardAcceleration = 0.0f;
 
@@ -50,6 +56,10 @@ public class SnailMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+		if (!gameManager.CanMove())
+		{
+			return;
+		}
 		if (m_isRotating)
 		{
 			RotateEnvironment();
