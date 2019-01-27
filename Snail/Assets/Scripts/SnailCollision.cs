@@ -9,11 +9,13 @@ public class SnailCollision : MonoBehaviour
 	public delegate void OnProximityEnter();
 	public delegate void OnProximityExit();
 	public delegate void OnDeathEnter();
+	public delegate void OnWonEnter();
 
     // Callback events for received input
     public static event OnProximityEnter ProximityEnter;
 	public static event OnProximityExit ProximityExit;
 	public static event OnDeathEnter DeathEnter;
+	public static event OnWonEnter WinEnter;
 
 	[SerializeField]
 	private GameManager snailGameManager;
@@ -54,6 +56,7 @@ public class SnailCollision : MonoBehaviour
 
 		if (other.tag == "Win")
 		{
+			WinEnter();
 			snailGameManager.GameWon();
 		}
 	}
