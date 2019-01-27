@@ -23,7 +23,7 @@
         }
     },
     "texturesets": {
-        "Shell_Outer": {
+        "ResetLever": {
             "shader": "Main shader"
         }
     }
