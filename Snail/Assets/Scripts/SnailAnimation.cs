@@ -57,7 +57,11 @@ public class SnailAnimation : MonoBehaviour {
 		dead = true;
 		for (int i = 0; i < anims.Length; i++)
 		{
-			anims[i].SetFloat("speed", 0.0f);
+			if (anims[i] != null)
+			{
+				anims[i].SetFloat("speed", 0.0f);
+			}
+			
 		}
 	}
 }

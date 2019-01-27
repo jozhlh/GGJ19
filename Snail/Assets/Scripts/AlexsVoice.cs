@@ -23,6 +23,7 @@ public class AlexsVoice : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
+		preloadSound.Play();
 		GameManager.InitEvent += InitSound;
 		SnailCollision.DeathEnter += Died;
 		SnailCollision.WinEnter += Won;
@@ -56,6 +57,8 @@ public class AlexsVoice : MonoBehaviour
 		}
 		else
 		{
+
+			preloadSound.Stop();
 			mainTrack.Play();
 		}
 		Debug.Log("InitSound");

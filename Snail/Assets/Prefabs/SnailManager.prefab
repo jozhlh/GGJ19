@@ -99,4 +99,4 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   snailAnimation: {fileID: 0}
   m_forwardSpeed: 0.01
-  m_rotationalSpeed: 0.05
+  m_rotationalSpeed: 0.04
