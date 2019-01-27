@@ -47,6 +47,21 @@ public class SnailSounds : MonoBehaviour
 		SnailCollision.ProximityExit += ExitProx;
 	}
 
+	/// <summary>
+	/// This function is called when the behaviour becomes disabled or inactive.
+	/// </summary>
+	void OnDisable()
+	{
+		GameManager.InitEvent -= InitSound;
+		SnailMovement.LeverGrabbed -= LeverHeld;
+		SnailMovement.HandleGrabbed -= ValveHeld;
+		SnailMovement.HandleUngrabbed -= ValveReleased;
+		SnailMovement.Moving -= PlayEngineSound;
+		SnailMovement.Stopping -= StopEngineSound;
+		SnailCollision.ProximityEnter -= EnterProx;
+		SnailCollision.ProximityExit -= ExitProx;
+	}
+
 	public void InitSound(int initNum)
 	{
 		if (initNum < buttons.Length)

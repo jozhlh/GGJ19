@@ -11,10 +11,10 @@ public class ScrollingUVs : MonoBehaviour
  
     void LateUpdate() 
     {
-        uvOffset += ( uvAnimationRate * Time.deltaTime );
-        if( renderer.enabled )
-        {
-            renderer.materials[ materialIndex ].SetTextureOffset( textureName, uvOffset );
-        }
+        // uvOffset += ( uvAnimationRate * Time.deltaTime );
+        // if( renderer.enabled )
+        // {
+        //     renderer.materials[ materialIndex ].SetTextureOffset( textureName, uvOffset );
+        // }
     }
 }

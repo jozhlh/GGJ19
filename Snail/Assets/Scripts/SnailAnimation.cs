@@ -23,6 +23,14 @@ public class SnailAnimation : MonoBehaviour {
 		SnailCollision.DeathEnter += Dead;
 	}
 
+	/// <summary>
+	/// This function is called when the behaviour becomes disabled or inactive.
+	/// </summary>
+	void OnDisable()
+	{
+		SnailCollision.DeathEnter -= Dead;
+	}
+
 	public void UpdateAnimSpeed(float speed)
 	{
 		if (anims == null)

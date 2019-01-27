@@ -28,6 +28,14 @@ public class EyeSlider : MonoBehaviour
 			parts[i].LerpToPos(t);
 		}
 	}
+
+	/// <summary>
+	/// This function is called when the behaviour becomes disabled or inactive.
+	/// </summary>
+	void OnDisable()
+	{
+		slider.ValueChanged -= OnValueChanged;
+	}
 	
 	public void OnValueChanged(object sender, ControllableEventArgs e)
 	{

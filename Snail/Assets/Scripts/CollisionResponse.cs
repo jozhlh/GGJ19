@@ -32,6 +32,16 @@ public class CollisionResponse : MonoBehaviour
 		SnailCollision.DeathEnter += Dead;
 	}
 
+	/// <summary>
+	/// This function is called when the behaviour becomes disabled or inactive.
+	/// </summary>
+	void OnDisable()
+	{
+		SnailCollision.ProximityEnter -= EnterProximity;
+		SnailCollision.ProximityExit -= EnterProximity;
+		SnailCollision.DeathEnter -= Dead;
+	}
+
 	void EnterProximity()
 	{
 		Debug.Log("received EnterProximity");

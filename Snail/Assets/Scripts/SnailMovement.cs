@@ -122,15 +122,12 @@ public class SnailMovement : MonoBehaviour
 		m_handleRotator.ValueChanged += HandleValueChanged;
 
 		var handle = m_handleRotator.GetControlInteractableObject();
-		//handle.InteractableObjectGrabbed += HandleG();
-		//handle.InteractableObjectUngrabbed += HandleUngrabbed();
 
 		handle.SubscribeToInteractionEvent(VRTK_InteractableObject.InteractionType.Grab, HandleG);
 		handle.SubscribeToInteractionEvent(VRTK_InteractableObject.InteractionType.Ungrab, HandleU);
 		
 		var lever = m_leverRotator.GetControlInteractableObject();
 		lever.SubscribeToInteractionEvent(VRTK_InteractableObject.InteractionType.Grab, LeverG);
-		//lever.InteractableObjectGrabbed += LeverGrabbed();
 	}
 
 	void HandleG(object sender, InteractableObjectEventArgs e)
@@ -164,6 +161,14 @@ public class SnailMovement : MonoBehaviour
 	{
 		m_leverRotator.ValueChanged -= LeverValueChanged;
 		m_handleRotator.ValueChanged -= HandleValueChanged;
+
+		var handle = m_handleRotator.GetControlInteractableObject();
+
+		handle.UnsubscribeFromInteractionEvent(VRTK_InteractableObject.InteractionType.Grab, HandleG);
+		handle.UnsubscribeFromInteractionEvent(VRTK_InteractableObject.InteractionType.Ungrab, HandleU);
+		
+		var lever = m_leverRotator.GetControlInteractableObject();
+		lever.UnsubscribeFromInteractionEvent(VRTK_InteractableObject.InteractionType.Grab, LeverG);
 	}
 
 	void LeverValueChanged(object sender, ControllableEventArgs e)
