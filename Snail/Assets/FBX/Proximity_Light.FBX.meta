@@ -1,26 +1,41 @@
 fileFormatVersion: 2
-guid: a8fd1830be0b65648a4ffcb91603d108
+guid: 8f874e0a1dd66f94d906c7e439fa47e3
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: No Name
-    2100002: Shell_Outer
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Lever_Base
-    4300002: ShellBlockout
+    100000: Object001
+    100002: Object002
+    100004: //RootNode
+    400000: Object001
+    400002: Object002
+    400004: //RootNode
+    2100000: Eyes
+    2100002: Glass
+    2100004: Red_Emissive
+    2300000: Object001
+    2300002: Object002
+    2300004: //RootNode
+    3300000: Object001
+    3300002: Object002
+    3300004: //RootNode
+    4300000: Proximity light
+    4300002: Object001
+    4300004: Object002
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: No Name
-    second: {fileID: 2100000, guid: 756b79272590c2d44855bd8147e5176e, type: 2}
+      name: Eyes
+    second: {fileID: 2100000, guid: fdcfecfc2ba2314468231d0ba1d2565a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: d8d29f81aada2b34c88820863e93376e, type: 2}
   materials:
     importMaterials: 1
-    materialName: 1
-    materialSearch: 2
+    materialName: 0
+    materialSearch: 1
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4

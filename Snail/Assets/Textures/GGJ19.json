@@ -23,10 +23,7 @@
         }
     },
     "texturesets": {
-        "Bobble_Snail": {
-            "shader": "Main shader"
-        },
-        "Eyes": {
+        "Shell_Outer": {
             "shader": "Main shader"
         }
     }
