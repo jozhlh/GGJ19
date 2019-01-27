@@ -1,76 +1,26 @@
 fileFormatVersion: 2
-guid: 9cd2a54801f691e429b656a7d96a24ab
+guid: 1dc3579523859ed4fa49d7af6071e3f9
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Clips
-    100004: Cylinder001
-    100006: Wires
-    100008: Cylinder005
-    100010: Cylinder006
-    100012: Line007
-    100014: Line008
-    100016: Shape001
+    100002: Sphere001
     400000: //RootNode
-    400002: Clips
-    400004: Cylinder001
-    400006: Wires
-    400008: Cylinder005
-    400010: Cylinder006
-    400012: Line007
-    400014: Line008
-    400016: Shape001
-    2100000: No Name
-    2100002: Clips
-    2100004: Wires
+    400002: Sphere001
+    2100000: Top_Hatch
     2300000: //RootNode
-    2300002: Clips
-    2300004: Cylinder001
-    2300006: Wires
-    2300008: Cylinder005
-    2300010: Cylinder006
-    2300012: Line007
-    2300014: Line008
-    2300016: Shape001
+    2300002: Sphere001
     3300000: //RootNode
-    3300002: Clips
-    3300004: Cylinder001
-    3300006: Wires
-    3300008: Cylinder005
-    3300010: Cylinder006
-    3300012: Line007
-    3300014: Line008
-    3300016: Shape001
-    4300000: Lever_Base
-    4300002: Wires
-    4300004: Cylinder001
-    4300006: Clips
-    4300008: Line007
-    4300010: Shape001
-    4300012: Line008
-    4300014: Cylinder005
-    4300016: Cylinder006
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Clips
-    second: {fileID: 2100000, guid: a5a06439b9736434fab3556c8dee2672, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: No Name
-    second: {fileID: 2100000, guid: 756b79272590c2d44855bd8147e5176e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Wires
-    second: {fileID: 2100000, guid: 3ca263120b9c7804c8fd2316c42d5533, type: 2}
+    3300002: Sphere001
+    4300000: Cylinder002
+    4300002: Sphere001
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
   materials:
     importMaterials: 1
-    materialName: 1
-    materialSearch: 2
+    materialName: 0
+    materialSearch: 1
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
@@ -117,8 +67,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -142,7 +92,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
