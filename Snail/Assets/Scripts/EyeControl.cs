@@ -47,6 +47,11 @@ public class EyeControl : VRTK_InteractableObject
 		vision.Untouched();
 	}
 
+	public void Works(bool doesItWorkNow)
+	{
+		works = doesItWorkNow;
+	}
+
 	public void EnableScreen()
 	{
 		//GetComponent<MeshRenderer>().material = touchedMat;

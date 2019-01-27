@@ -46,6 +46,7 @@ public class SnailCollision : MonoBehaviour
 			{
 				Debug.Log("Dead");
 				DeathEnter();
+				snailGameManager.GameOver();
 			}
 			dead++;
 			Debug.Log("Dead");

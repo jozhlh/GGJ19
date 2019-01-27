@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 4369357704096892}
   - component: {fileID: 114671370631344770}
   - component: {fileID: 114144043917846528}
+  - component: {fileID: 114098914062399284}
   m_Layer: 0
   m_Name: LeverControl
   m_TagString: Untagged
@@ -163,8 +164,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1039920810031526}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0.85}
+  m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: -0.5}
+  m_LocalPosition: {x: 0.131, y: 1.229, z: 0.796}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4626079450581668}
@@ -172,14 +173,14 @@ Transform:
   - {fileID: 4805711295325066}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 180, y: 90, z: -90}
 --- !u!4 &4369357704096892
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1517035703955478}
-  m_LocalRotation: {x: -0.00000004366266, y: -0.000000050343466, z: 0.000000029802322,
+  m_LocalRotation: {x: -0.00000014124659, y: -0.00000067140445, z: 0.000000029802322,
     w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -352,6 +353,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114098914062399284
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1517035703955478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76a2ff173e7e439459cc2bc8765d6a6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snailGameManager: {fileID: 0}
 --- !u!114 &114144043917846528
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -394,10 +407,10 @@ MonoBehaviour:
   isLocked: 0
   stepValueRange:
     minimum: 0
-    maximum: 10
+    maximum: 1
   stepSize: 1
   useStepAsValue: 1
-  snapToStep: 0
+  snapToStep: 1
   snapForce: 10
   precisionGrab: 1
   detachDistance: 1

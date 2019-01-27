@@ -177,8 +177,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4280098300
+  m_fontColor: {r: 0.990566, g: 0.11681201, b: 0.11681201, a: 1}
   m_enableVertexGradient: 0
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -274,6 +274,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4756678597699042, guid: 97ef31c6b824b5a499ad0f56a651ff36,
     type: 2}
   m_PrefabInternal: {fileID: 1318676082}
+--- !u!1001 &312448487
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4256183131102142, guid: 4e6dadaa925ad174dac88750e089bff5, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.131
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256183131102142, guid: 4e6dadaa925ad174dac88750e089bff5, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.229
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256183131102142, guid: 4e6dadaa925ad174dac88750e089bff5, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.796
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256183131102142, guid: 4e6dadaa925ad174dac88750e089bff5, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256183131102142, guid: 4e6dadaa925ad174dac88750e089bff5, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256183131102142, guid: 4e6dadaa925ad174dac88750e089bff5, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256183131102142, guid: 4e6dadaa925ad174dac88750e089bff5, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256183131102142, guid: 4e6dadaa925ad174dac88750e089bff5, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114098914062399284, guid: 4e6dadaa925ad174dac88750e089bff5,
+        type: 2}
+      propertyPath: snailGameManager
+      value: 
+      objectReference: {fileID: 1394164810}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e6dadaa925ad174dac88750e089bff5, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &341784450
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,10 +454,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1820365985794294, guid: 780866be93227444595d7aa1412406f5, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 780866be93227444595d7aa1412406f5, type: 2}
   m_IsPrefabAsset: 0
@@ -482,6 +525,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114587779891744448, guid: 9daf162b3a7347140a77d8bae34c23b8,
+        type: 2}
+      propertyPath: snailGameManager
+      value: 
+      objectReference: {fileID: 1394164810}
     - target: {fileID: 114659383872086602, guid: 9daf162b3a7347140a77d8bae34c23b8,
         type: 2}
       propertyPath: m_leverRotator

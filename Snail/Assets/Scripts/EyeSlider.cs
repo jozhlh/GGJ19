@@ -22,7 +22,7 @@ public class EyeSlider : MonoBehaviour
 		//parts = GetComponentsInParent<TelescopicPart>();
 		slider.ValueChanged += OnValueChanged;
 		var t= slider.GetNormalizedValue();
-		controller.works = (t > 0.9f);
+		controller.Works(t > 0.9f);
 		for (int i = 0; i < parts.Length; i++)
 		{
 			parts[i].LerpToPos(t);
@@ -31,21 +31,9 @@ public class EyeSlider : MonoBehaviour
 	
 	public void OnValueChanged(object sender, ControllableEventArgs e)
 	{
-		// var val = GetValue();
-
-		// if (val > maximumLength)
-		// {
-		// 	SetValue(maximumLength);
-		// }
-
-		// if (val < 0.0f)
-		// {
-		// 	SetValue(0.0f);
-		// }
-
 		var t = e.normalizedValue;
 
-		controller.works = (t > 0.9f);
+		controller.Works(t > 0.9f);
 
 		for (int i = 0; i < parts.Length; i++)
 		{

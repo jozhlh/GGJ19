@@ -7,6 +7,14 @@ TagManager:
   - ExcludeTeleport
   - Proximity
   - Dead
+  - Leg
+  - SnapCube
+  - Arm
+  - SnapCylinder
+  - Saucers
+  - Torso
+  - Head
+  - Win
   layers:
   - Default
   - TransparentFX

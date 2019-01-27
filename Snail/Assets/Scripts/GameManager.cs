@@ -110,7 +110,7 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
-	void GameOver()
+	public void GameOver()
 	{
 		state = GameState.dead;
 	}
@@ -118,9 +118,10 @@ public class GameManager : MonoBehaviour
 	public void GameWon()
 	{
 		state = GameState.win;
+		Debug.Log("Won");
 	}
 
-	void Reload ()
+	public void Reload ()
 	{
 		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}
