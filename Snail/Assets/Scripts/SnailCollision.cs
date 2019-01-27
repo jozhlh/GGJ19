@@ -15,6 +15,9 @@ public class SnailCollision : MonoBehaviour
 	public static event OnProximityExit ProximityExit;
 	public static event OnDeathEnter DeathEnter;
 
+	[SerializeField]
+	private GameManager snailGameManager;
+
 	private int proximity = 0;
 
 	private int dead = 0;
@@ -46,6 +49,11 @@ public class SnailCollision : MonoBehaviour
 			}
 			dead++;
 			Debug.Log("Dead");
+		}
+
+		if (other.tag == "Win")
+		{
+			snailGameManager.GameWon();
 		}
 	}
 

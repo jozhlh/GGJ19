@@ -170,6 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6764cfaa67024b84db6c3ec21c4ec388, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snailGameManager: {fileID: 0}
 --- !u!114 &114659383872086602
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -183,9 +184,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_leverRotator: {fileID: 0}
   m_handleRotator: {fileID: 0}
+  m_environmentTransform: {fileID: 0}
+  gameManager: {fileID: 0}
   m_forwardSpeed: 0.01
   m_rotationalSpeed: 0.05
-  m_environmentTransform: {fileID: 0}
 --- !u!135 &135466971775589318
 SphereCollider:
   m_ObjectHideFlags: 1

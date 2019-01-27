@@ -1,14 +1,22 @@
 fileFormatVersion: 2
-guid: 0bf8f9297ad29c446a32f76ce8e5f7c4
+guid: ef5713029f9d3ff499dd343b4edb0238
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Box009
+    100004: Rectangle002
     400000: //RootNode
-    2100000: No Name
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Path
+    400002: Box009
+    400004: Rectangle002
+    2100000: Back_Hatch
+    2300000: Box009
+    2300002: Rectangle002
+    3300000: Box009
+    3300002: Rectangle002
+    4300000: Box009
+    4300002: Rectangle002
+    7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
   materials:
