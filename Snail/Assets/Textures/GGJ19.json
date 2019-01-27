@@ -23,7 +23,10 @@
         }
     },
     "texturesets": {
-        "DoomClock": {
+        "Bobble_Snail": {
+            "shader": "Main shader"
+        },
+        "Eyes": {
             "shader": "Main shader"
         }
     }
