@@ -7,6 +7,20 @@ using VRTK.Controllables.ArtificialBased;
 
 public class SnailMovement : MonoBehaviour
 {
+	public delegate InteractableObjectEventHandler OnLeverGrabbed();
+	public delegate InteractableObjectEventHandler OnHandleGrabbed();
+	public delegate InteractableObjectEventHandler OnHandleUngrabbed();
+	public delegate void OnMove();
+	public delegate void OnStop();
+
+
+    // Callback events for received input
+    public static event OnLeverGrabbed LeverGrabbed;
+	public static event OnHandleGrabbed HandleGrabbed;
+	public static event OnHandleUngrabbed HandleUngrabbed;
+	public static event OnMove Moving;
+	public static event OnStop Stopping;
+
 	[Header("Refs")]
 	[SerializeField]
 	private VRTK_ArtificialRotator m_leverRotator;
@@ -46,6 +60,7 @@ public class SnailMovement : MonoBehaviour
 		//m_snailRB = GetComponent<Rigidbody>();
 		OverrideHandleLimits();
 		SubscribeToEvents();
+		snailAnimation.UpdateAnimSpeed(0.0f);
 	}
 
 	/// <summary>
@@ -105,6 +120,44 @@ public class SnailMovement : MonoBehaviour
 	{
 		m_leverRotator.ValueChanged += LeverValueChanged;
 		m_handleRotator.ValueChanged += HandleValueChanged;
+
+		var handle = m_handleRotator.GetControlInteractableObject();
+		//handle.InteractableObjectGrabbed += HandleG();
+		//handle.InteractableObjectUngrabbed += HandleUngrabbed();
+
+		handle.SubscribeToInteractionEvent(VRTK_InteractableObject.InteractionType.Grab, HandleG);
+		handle.SubscribeToInteractionEvent(VRTK_InteractableObject.InteractionType.Ungrab, HandleU);
+		
+		var lever = m_leverRotator.GetControlInteractableObject();
+		lever.SubscribeToInteractionEvent(VRTK_InteractableObject.InteractionType.Grab, LeverG);
+		//lever.InteractableObjectGrabbed += LeverGrabbed();
+	}
+
+	void HandleG(object sender, InteractableObjectEventArgs e)
+	{
+		if (!gameManager.CanMove())
+		{
+			return;
+		}
+		HandleGrabbed();
+	}
+
+	void HandleU(object sender, InteractableObjectEventArgs e)
+	{
+		if (!gameManager.CanMove())
+		{
+			return;
+		}
+		HandleUngrabbed();
+	}
+
+	void LeverG(object sender, InteractableObjectEventArgs e)
+	{
+		if (!gameManager.CanMove())
+		{
+			return;
+		}
+		LeverGrabbed();
 	}
 
 	void UnsubscribeFromEvents()
@@ -117,6 +170,14 @@ public class SnailMovement : MonoBehaviour
 	{
 		m_forwardAcceleration = e.normalizedValue;
 		snailAnimation.UpdateAnimSpeed(m_forwardAcceleration);
+		if (m_forwardAcceleration > 0.05f) 
+		{
+			Moving();
+		}
+		else
+		{
+			Stopping();
+		}
 	}
 
 	void HandleValueChanged(object sender, ControllableEventArgs e)
