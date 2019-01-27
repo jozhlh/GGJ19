@@ -41,11 +41,13 @@ public class AlexsVoice : MonoBehaviour
 
 	public void Died()
 	{
+		mainTrack.Stop();
 		deadSound.Play();
 	}
 
 	public void Won()
 	{
+		mainTrack.Stop();
 		winSound.Play();
 	}
 
