@@ -1,20 +1,33 @@
 fileFormatVersion: 2
-guid: 1dc3579523859ed4fa49d7af6071e3f9
+guid: d35fdd925f72326499efeaea506aeb9c
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Sphere001
+    100002: Clips
+    100004: Line007
+    100006: Line008
+    100008: Shape001
     400000: //RootNode
-    400002: Sphere001
-    2100000: Top_Hatch
-    2300000: //RootNode
-    2300002: Sphere001
-    3300000: //RootNode
-    3300002: Sphere001
-    4300000: Cylinder002
-    4300002: Sphere001
-    7400000: Take 001
+    400002: Clips
+    400004: Line007
+    400006: Line008
+    400008: Shape001
+    2100000: Wires
+    2100002: Clips
+    2300000: Clips
+    2300002: Line007
+    2300004: Line008
+    2300006: Shape001
+    3300000: Clips
+    3300002: Line007
+    3300004: Line008
+    3300006: Shape001
+    4300000: Line008
+    4300002: Line007
+    4300004: Clips
+    4300006: Shape001
+    7400000: WireRumble_01
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -43,7 +56,35 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: WireRumble_01
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
