@@ -9,6 +9,8 @@ public class SnailVision : MonoBehaviour
 	EyeControl[] eyes;
 
 	int touched = 0;
+
+	int initNumber = 3;
 	
 	// Use this for initialization
 	void Start ()
@@ -32,7 +34,23 @@ public class SnailVision : MonoBehaviour
 	{
 		if (touched > 1)
 		{
-			snailManager.Initialisation();
+			bool playInit = false;
+			for (int i = 0; i < eyes.Length; i++)
+			{
+				if (eyes[i].works)
+				{
+					playInit = true;
+				}
+			}
+
+			if (playInit)
+			{
+				if (!snailManager.Initialisation(initNumber))
+				{
+					return;
+				}
+			}
+
 			for (int i = 0; i < eyes.Length; i++)
 			{
 				eyes[i].EnableScreen();

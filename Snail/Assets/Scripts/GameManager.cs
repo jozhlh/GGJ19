@@ -82,17 +82,28 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
-	public void Initialisation()
+	public bool Initialisation(int initNumber)
 	{
+		if (initNumber < initCounter)
+		{
+			return true;
+		}
 		if (state != GameState.init)
 		{
-			return;
+			return false;
 		}
+		if (initNumber > initCounter)
+		{
+			return false;
+		}
+		
+		
 		initCounter++;
 		if (initCounter >= initialisationSteps)
 		{
 			BeginGame();
 		}
+		return true;
 	}
 
 	void BeginGame()
