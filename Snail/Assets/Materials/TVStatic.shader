@@ -23,13 +23,13 @@
 					#pragma vertex vert
 					#pragma fragment frag
 					#pragma target 3.0
-					//#include UnityCG.cginc
+					#include "UnityCG.cginc"
 					
 					//This produces random values between 0 and 1
-					float rand(float2 co)
-				{
-					return frac((sin( dot(co.xy , float2(12.345  _Time.w, 67.890  _Time.w) ))  12345.67890+_Time.w));
-				}
+				//	float rand(float2 co)
+				//{
+				//	return frac((sin( dot(co.xy , float2(12.345  _Time.w, 67.890  _Time.w) ))  12345.67890+_Time.w));
+				//}
 				
 				fixed4 _ColorA;
 				fixed4 _ColorB;
@@ -40,7 +40,7 @@
 				
 				struct vertexInput
 				{
-					float4 vertex  POSITION;
+					//float4 vertex  POSITION;
 					float4 texcoord0  TEXCOORD0;
 					float4 texcoord2  TEXCOORD2;
 				};
@@ -58,7 +58,7 @@
 					o.position = UnityObjectToClipPos (i.vertex);
 					o.texcoord0 = i.texcoord0;
 					
-					get the model's origin, so we can calculate the distance to camera (and scale the noise accordingly)
+					//get the model's origin, so we can calculate the distance to camera (and scale the noise accordingly)
 					float4 modelOrigin = mul(unity_ObjectToWorld, float4(0.0, 0.0, 0.0, 1.0));
 					
 					o.camDist.x = distance(_WorldSpaceCameraPos.xyz, modelOrigin.xyz);
@@ -80,7 +80,7 @@
 					sc.xy = i.camDist.xx;
 					sc.xy += 0.5;
 					
-					round the screen coordinates to give it a blocky appearance
+					//round the screen coordinates to give it a blocky appearance
 					sc.x = round(sc.x_ResX)_ResX;
 					sc.y = round(sc.y_ResY)_ResY;
 					
