@@ -16,6 +16,14 @@ public class ResetLever : MonoBehaviour {
 		lever = GetComponent<VRTK_ArtificialRotator>();
 		lever.ValueChanged += OnChanged;
 	}
+	
+	/// <summary>
+	/// This function is called when the behaviour becomes disabled or inactive.
+	/// </summary>
+	void OnDisable()
+	{
+		lever.ValueChanged -= OnChanged;
+	}
 
 	public void OnChanged(object sender, ControllableEventArgs e)
 	{

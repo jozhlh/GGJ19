@@ -37,6 +37,16 @@ public class ProximityLight : MonoBehaviour
 		SnailCollision.ProximityExit += ExitProximity;
 		SnailCollision.DeathEnter += Dead;
 	}
+
+	/// <summary>
+	/// This function is called when the behaviour becomes disabled or inactive.
+	/// </summary>
+	void OnDisable()
+	{
+		SnailCollision.ProximityEnter -= EnterProximity;
+		SnailCollision.ProximityExit -= ExitProximity;
+		SnailCollision.DeathEnter -= Dead;
+	}
 	
 	// Update is called once per frame
 	void Update ()

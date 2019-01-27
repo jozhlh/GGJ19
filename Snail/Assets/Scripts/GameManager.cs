@@ -6,6 +6,10 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+	public delegate void OnInit(int initNum);
+    // Callback events for received input
+    public static event OnInit InitEvent;
+
 	enum GameState { init, run, dead, win }
 
 	[SerializeField]
@@ -48,6 +52,14 @@ public class GameManager : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+		if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Q))
+		{
+			Application.Quit();
+		}
+		if (Input.GetKeyDown(KeyCode.R))
+		{
+			Reload();
+		}
 		switch (state)
 		{
 			case GameState.init:
@@ -97,6 +109,7 @@ public class GameManager : MonoBehaviour
 			return false;
 		}
 		
+		InitEvent(initCounter);
 		
 		initCounter++;
 		if (initCounter >= initialisationSteps)

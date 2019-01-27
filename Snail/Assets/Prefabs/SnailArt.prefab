@@ -5306,6 +5306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92b4ec7b9e714204c853d1432555d4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snailGameManager: {fileID: 0}
 --- !u!114 &114763719249382888
 MonoBehaviour:
   m_ObjectHideFlags: 1
