@@ -1,22 +1,15 @@
 fileFormatVersion: 2
-guid: ef5713029f9d3ff499dd343b4edb0238
+guid: 4c5ac59955b52144aa445f98452c4a45
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Box009
-    100004: Rectangle002
     400000: //RootNode
-    400002: Box009
-    400004: Rectangle002
-    2100000: Back_Hatch
-    2300000: Box009
-    2300002: Rectangle002
-    3300000: Box009
-    3300002: Rectangle002
-    4300000: Box009
-    4300002: Rectangle002
-    7400000: Take 001
+    2100000: No Name
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: FoodSystem_Placeholder
+    7400000: FoodRumble_01
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -45,7 +38,35 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: FoodRumble_01
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
