@@ -1,17 +1,20 @@
 fileFormatVersion: 2
-guid: 5545fc9f21e49414cac64f41fd19e6e8
+guid: d171f26098d69da48a0b3456da0b9a7f
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: No Name
+    2100000: DoomClock
     2300000: //RootNode
     3300000: //RootNode
-    4300000: FoodSystem_Placeholder
-    7400000: Take 001
-    9500000: //RootNode
-  externalObjects: {}
+    4300000: DoomClock
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DoomClock
+    second: {fileID: 2100000, guid: 2bbe031e076bc1d49b6c46a228dd7c35, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -62,8 +65,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -87,7 +90,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
